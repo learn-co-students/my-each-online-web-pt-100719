@@ -1,11 +1,12 @@
-
-def my_each(array) 
-  counter = 0
-  while counter < array.length
-    yield(array[counter]) # return iteration eg. array[0], array[1], array[2]
-    counter += 1 # increment counter by 1
+def my_each(array)
+  count = 0
+  new_arr = []
+  while count < array.length 
+    yield(array[count])
+    new_arr << array[count]
+    count += 1
   end
-  return array #return array
+  new_arr
 end
 
-my_each(["Hi", "how", "are", "you", "?"]) {|word| print "#{word}\n"} 
+my_each(["Aaron","dave","ian"]) {|n| return n}
