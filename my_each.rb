@@ -9,4 +9,4 @@ def my_each(array)
   new_arr
 end
 
-my_each(["Aaron","dave","ian"]) {|n| return n}
+my_each([1,2,3,4,5]) {|n| n}
