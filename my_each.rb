@@ -5,6 +5,7 @@ def my_each (array)
   while array.length < i
    i * 2
    i += 1
+   yield
   end  
 end
 
